@@ -21,8 +21,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Abstractions\" />
     <Folder Include="TestDataSets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SixLetterWordChallengeApp\SixLetterWordChallengeApp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TestDataSets\testfile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
